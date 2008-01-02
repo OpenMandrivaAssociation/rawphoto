@@ -18,6 +18,7 @@ Requires:	dcraw gimp
 Conflicts:	dcraw-gimp2.0 ufraw
 #BuildRequires:	liblcms-devel libart_lgpl2-devel libgdk-pixbuf2-devel 
 BuildRequires:	libgimp-devel >= 2.0 libgtk+-devel
+Buildroot:	%_tmppath/%name-%version-%release-root
 
 %description
 
