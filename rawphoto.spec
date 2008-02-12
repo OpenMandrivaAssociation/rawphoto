@@ -21,7 +21,6 @@ BuildRequires:	libgimp-devel >= 2.0 libgtk+-devel
 Buildroot:	%_tmppath/%name-%version-%release-root
 
 %description
-
 A GIMP plug-in which reads and processes raw images from most digital
 cameras. The conversion is done by the dcraw software and so all
 cameras supported by dcraw are also supported by this plug-in.
