@@ -3,7 +3,7 @@
 %define	subversion	%nil
 #define	release		0.%{subversion}.1mdk
 %define releasedate	200410220910
-%define	release		%mkrel 5
+%define	release		%mkrel 6
 
 Name:		%name
 Version:	%version
