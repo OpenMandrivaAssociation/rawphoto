@@ -43,12 +43,12 @@ but as soon as it stops building or working, we will remove it from
 the distribution.
 
 %prep
-rm -rf $RPM_BUILD_DIR/%{name}-%{releasedate}
+rm -rf %{_builddir}/%{name}-%{releasedate}
 
 %setup -q -n %{name}-%{releasedate}
 
 %build
-cd $RPM_BUILD_DIR/%{name}-%{releasedate}
+cd %{_builddir}/%{name}-%{releasedate}
 
 #configure --with-lcms-includes=/usr/include/lcms
 #configure
@@ -58,7 +58,7 @@ perl -p -i -e 's:gimptool:gimptool-2.0:' Makefile */Makefile
 make
 
 %install
-cd $RPM_BUILD_DIR/%{name}-%{releasedate}
+cd %{_builddir}/%{name}-%{releasedate}
 
 install -d %{buildroot}%{_libdir}/gimp/2.0/plug-ins
 install -m 755 src/rawphoto %{buildroot}%{_libdir}/gimp/2.0/plug-ins
